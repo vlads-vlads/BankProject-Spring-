@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.balance__value, .balance__label {
+  font-size: 2rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.transaction-list-container {
+  margin-top: 20px;
+  max-height: 50vh; /* Limiting height to half of the viewport height */
+  overflow-y: auto; /* Adding vertical scrollbar if content exceeds container height */
+}
+
+h1, h2 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+button {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border-radius: 10rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.3s;
+}
+
+button:hover {
+  color: #777;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+/* Styles for transaction list */
+.transaction-list {
+  width: 100%;
+}
+
+.transaction-list .transaction-item {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for deposit transactions */
+.transaction-list .transaction-item.deposit {
+  color: green;
+}
+
+/* Style for withdrawal transactions */
+.transaction-list .transaction-item.withdrawal {
+  color: red;
+}
+
+/* Style for transfer transactions */
+.transaction-list .transaction-item.transfer {
+  color: blue;
+}

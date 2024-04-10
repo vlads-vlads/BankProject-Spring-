@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Bank Account Management</h1>
+<form action="api/v1/accounts" id="accountForm" method="POST">
+    <input type="text" id="accountName" placeholder="name" name="name"><br><br>
+    <input type="email" id="accountEmail" placeholder="email" name="email"><br><br>
+    <input type="password" id="accountPassword" placeholder="password" name="password"><br><br>
+    <button type="submit">Create Account</button>
+</form>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

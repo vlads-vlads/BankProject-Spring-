@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="balance">
+    <div>
+        <p class="balance__label">Current balance</p>
+    </div>
+    <p class="balance__value" id="userBalance">0000€</p>
+</div>
+
+
+<div class="operation operation--deposit">
+    <h2>Deposit money</h2>
+    <form class="form form--deposit">
+        <input type="number" class="form__input form__input--amount" placeholder="Amount" />
+        <button class="form__btn form__btn--deposit">Deposit</button>
+    </form>
+</div>
+
+
+<div class="operation operation--withdrawal">
+    <h2>Withdraw money</h2>
+    <form class="form form--withdrawal">
+        <input type="number" class="form__input form__input--amount" placeholder="Amount" />
+        <button class="form__btn form__btn--withdrawal">Withdraw</button>
+    </form>
+</div>
+
+
+<div class="operation operation--transfer">
+    <h2>Transfer money</h2>
+    <form class="form form--transfer">
+        <input type="text" class="form__input form__input--recipient" placeholder="Recipient" />
+        <input type="number" class="form__input form__input--amount" placeholder="Amount" />
+        <button class="form__btn form__btn--transfer">Transfer</button>
+    </form>
+</div>
+
+<div class="transaction-history">
+    <h2>Transaction History</h2>
+    <ul class="transaction-list" id="transactionList">
+
+    </ul>
+</div>
+
+
+
+<script src="account.js"></script>
+</body>
+</html>
